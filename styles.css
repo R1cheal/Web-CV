@@ -1,4 +1,18 @@
 /* styles.css */
+:root {
+        --section1: #F7F3E4;
+        --section2: #E6E3D8;
+        --h1: #970A12;
+        --text: #70191D;
+        --buttons: #FF8412;
+    --nav-text: #F7F3E4;
+    --nav-bar: #065756;
+    --nav-hover: #054D4C;
+    --extra1:#3EB8F0;
+    --extra2:#9EDE5D;
+    --neutral:black;
+      }
+
 header { display: contents; }
 
 body {
@@ -9,7 +23,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 6px;
-  background-color:#006E6A;
+  background-color:var(--nav-bar);
   position: sticky;
   top:0;
     z-index:1;
@@ -30,9 +44,9 @@ nav ul li{display:block;
     border-style:hidden;
     border-radius:6px;
 }
-nav ul li:hover{background-color:#065756;}
+nav ul li:hover{background-color:var(--nav-hover);}
 
-nav ul li a{ color:#FFF9CE;}
+nav ul li a{ color:var(--nav-text);}
 
 .toggle, nav>a {
     display:flex;
@@ -41,8 +55,8 @@ nav ul li a{ color:#FFF9CE;}
     gap:1rem;
 }   
     
-.button {background-color:#FF8412;
-    color:#FFF9CE;
+.button {background-color:var(--buttons);
+    color:var(--nav-text);
     border-style:hidden;
     border-radius:20px;
     padding:9px 13px 13px 9px;
@@ -50,14 +64,14 @@ nav ul li a{ color:#FFF9CE;}
 }
 
 section:nth-child(n) {
-  background-color:#FFF9CE;
+  background-color:var(--section1);
   border-style:none;
   margin:0px 0px;
   padding: 5px 5px 5px;
 }
 
 section:nth-child(2n) {
-  background-color:#FFF691;
+  background-color:var(--section2);
   border-style:none;
   margin:0px 0px;
   padding: 5px 5px 5px;
@@ -83,7 +97,7 @@ h2 {text-align:center;}
 
 .carousel li {
   list-style-type: none;
-  background-color: #FFF691;
+  background-color: var(--section2);
   border-style:hidden;
   border-radius:12px;
   padding: 10px;
@@ -101,7 +115,7 @@ h2 {text-align:center;}
 .box-holder li {
   width:550px;
   height:280px;
-  background-color:#FFF9CE;
+  background-color:var(--section1);
   border-style:hidden;
   border-radius:12px;
   padding: 10px;
@@ -117,7 +131,7 @@ h2 {text-align:center;}
 }
 
 .pin-holder li {
-  background-color:#FFF691;
+  background-color:var(--section2);
   border-style:hidden;
   border-radius:12px;
   padding: 10px;
