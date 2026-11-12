@@ -1,2 +1,123 @@
 /* styles.css */
+header { display: contents; }
 
+body {
+    margin: 0px 0px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background-color:#006E6A;
+  position: sticky;
+  top:0;
+}
+
+.logo, nav>ul{flex:1;}
+
+nav ul {
+  display: flex;         
+  gap: 1.5rem;
+  list-style: none;        
+  margin: 0 0 0;      
+  padding: 0;
+}
+
+nav ul li{display:block;
+    padding: 14px 16px;
+    border-style:hidden;
+    border-radius:6px;
+}
+nav ul li:hover{background-color:#065756;}
+
+nav ul li a{ color:#FFF9CE;}
+
+.toggle, nav>a {
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+    gap:1rem;
+}   
+    
+.button {background-color:#FF8412;
+    color:#FFF9CE;
+    border-style:hidden;
+    border-radius:20px;
+    padding:9px 13px 13px 9px;
+    justify-content:center;
+}
+
+section:nth-child(n) {
+  background-color:#FFF9CE;
+  border-style:none;
+  margin:0px 0px;
+  padding: 5px 5px 5px;
+}
+
+section:nth-child(2n) {
+  background-color:#FFF691;
+  border-style:none;
+  margin:0px 0px;
+  padding: 5px 5px 5px;
+}
+
+h2 {text-align:center;}
+
+.carousel {
+  width: 100vw;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scroll-snap-type: x proximity;
+  position:relative;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel li {
+  list-style-type: none;
+  background-color: #FFF691;
+  border-style:hidden;
+  border-radius:12px;
+  padding: 10px;
+  flex: 0 0 30%;
+  scroll-snap-align: center;
+}
+
+.box-holder {
+  column-count:2;
+  column-gap: 50px;
+  list-style:none;
+  padding-left:0;
+}
+
+.box-holder li {
+  width:550px;
+  height:280px;
+  background-color:#FFF9CE;
+  border-style:hidden;
+  border-radius:12px;
+  padding: 10px;
+  margin: 15px 15px;
+  display: inline-block;
+}
+
+.pin-holder {
+  column-count:4;
+  column-gap: 20px;
+  list-style:none;
+  padding-left:0;
+}
+
+.pin-holder li {
+  background-color:#FFF691;
+  border-style:hidden;
+  border-radius:12px;
+  padding: 10px;
+  margin: 15px 15px;
+  display: inline-block;
+}
