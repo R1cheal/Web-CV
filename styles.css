@@ -76,6 +76,8 @@ h2 {text-align:center;}
   position:relative;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  mask-image: linear-gradient(to right, #065756 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, #065756 85%, transparent);
 }
 
 .carousel li {
@@ -86,6 +88,41 @@ h2 {text-align:center;}
   padding: 10px;
   flex: 0 0 30%;
   scroll-snap-align: center;
+}
+
+.carousel li {
+  list-style-type: none;
+  background-color: #FFF691;
+  border-style:hidden;
+  border-radius:12px;
+  padding: 10px;
+  flex: 0 0 30%;
+  scroll-snap-align: center;
+}
+
+.carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;                      
+  mask-image: linear-gradient(to right, transparent, black);
+  -webkit-mask-image: linear-gradient(to right, transparent, black);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.carousel::after {
+  content: "\203A";          
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  line-height: 1;
+  color: #FFA200;
+  pointer-events: none;
 }
 
 .box-holder {
