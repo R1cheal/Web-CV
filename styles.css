@@ -64,24 +64,28 @@ nav ul li a{ color:var(--nav-text);}
 }
 
 section:nth-child(n) {
-  background-color:var(--section1);
-  border-style:none;
+ background-color:var(--section1);
+    border-style:none;
   margin:0px 0px;
   padding: 5px 5px 5px;
 }
 
 section:nth-child(2n) {
-  background-color:var(--section2);
+ background-color:var(--section2);
   border-style:none;
   margin:0px 0px;
   padding: 5px 5px 5px;
 }
+
+#about{background-color:var(--section1);}
 
 h1{text-align:right;
     color:var(--h1);
 }
 
 h2 {text-align:center;}
+
+#education{background-color:var(--extra1);}
 
 .carousel {
     min-width:0;
@@ -101,13 +105,17 @@ h2 {text-align:center;}
 
 .carousel li {
   list-style-type: none;
-  background-color: var(--section2);
-  border-style:hidden;
+  background-color: var(--section1);
+  border-style:solid;
+    border-color:var(--h1);
+    border-width:1px;
   border-radius:12px;
   padding: 10px;
   flex: 0 0 30%;
   scroll-snap-align: center;
 }
+
+#experience{background-color:var(--buttons);}
 
 .box-holder {
   column-count:2;
@@ -127,6 +135,8 @@ h2 {text-align:center;}
   display: inline-block;
 }
 
+#beyond{background-color:var(--extra2);}
+
 .pin-holder {
   column-count:4;
   column-gap: 20px;
@@ -135,10 +145,12 @@ h2 {text-align:center;}
 }
 
 .pin-holder li {
-  background-color:var(--section2);
+  background-color:var(--section1);
   border-style:hidden;
   border-radius:12px;
   padding: 10px;
   margin: 15px 15px;
   display: inline-block;
 }
+
+#contacts{background-color:var(--section1);}
