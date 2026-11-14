@@ -3,6 +3,7 @@ header { display: contents; }
 
 body {
     margin: 0px 0px;
+  color:#343E40;
 }
 
 nav {
@@ -30,7 +31,7 @@ nav ul li{display:block;
     border-style:hidden;
     border-radius:6px;
 }
-nav ul li:hover{background-color:var(--nav-hover);}
+nav ul li:hover{background-color:var(#202627);}
 
 nav ul li a{ color:#F9F3D9;}
 
@@ -42,7 +43,7 @@ nav>a {
 }   
     
 .button {background-color:#E7D176;
-    color:var(--nav-text);
+    color:#343E40;
     border-style:hidden;
     border-radius:20px;
     padding:9px 13px 13px 9px;
@@ -65,6 +66,8 @@ h1{justify-content:right;
 }
 
 #about img{justify-content:left;}
+
+#about p{float:left;}
 
 h2 {text-align:center;}
 
@@ -90,8 +93,8 @@ h2 {text-align:center;}
   list-style-type: none;
   background-color:#F9F3D9;
   border-style:solid;
-    border-color:#343E40;
-    border-width:1px;
+    border-color:#DCB3B4;
+    border-width:10px;
   border-radius:12px;
   padding: 10px;
   flex: 0 0 30%;
@@ -111,7 +114,9 @@ h2 {text-align:center;}
   width:550px;
   height:280px;
   background-color:#F9F3D9;
-  border-style:hidden;
+  border-style:solid;
+  border-color:#6E0808;
+  border-width:7px;
   border-radius:12px;
   padding: 10px;
   margin: 15px 15px;
@@ -129,7 +134,9 @@ h2 {text-align:center;}
 
 .pin-holder li {
   background-color:#F9F3D9;
-  border-style:hidden;
+  border-style:solid;
+  border-width:1px;
+  border-color:#343E40;
   border-radius:12px;
   padding: 10px;
   margin: 15px 15px;
