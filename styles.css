@@ -115,14 +115,23 @@ section{
   background-repeat: no-repeat;
   background-color: var(--sectioncolour1);
   background-position: center;
-  display:flex;
   color:var(--extra);
+  padding:0px 0px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
 
-h1{justify-content:right;
-}
+h1{align-self: end;
+margin:10px;}
+#about>p{align-self: start;
+margin:10px;}
 
-#about img{justify-content:left;}
+#about img{grid-row:1/span 2;
+  justify-self: end;
+  height:550px;
+  width:400px;}
 
 #about p{float:left;}
 
@@ -237,8 +246,12 @@ h2 {text-align:center;}
   font-weight: 500;
 }
 
-#contacts{background-color:var(--maincolour1);}
-#contacts h2{background-color:var(--maincolour2);
+#contacts{background-color:var(--maincolour1);
+display:flex;}
+
+#contacts h2{
+  display:flexbox;
+  background-color:var(--maincolour2);
   background-size: 5px 5px;
   padding:5px 5px 5px;
   text-transform: uppercase;
