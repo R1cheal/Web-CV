@@ -13,7 +13,8 @@ nav {
   background-color:#343E40;
   position: sticky;
   top:0;
-    z-index:1;
+  z-index:1;
+  box-shadow: 0px 5px 20px;
 }
 
 .logo, nav>ul{flex:1;}
@@ -31,7 +32,8 @@ nav ul li{display:block;
     border-style:hidden;
     border-radius:6px;
 }
-nav ul li:hover{background-color:var(#202627);}
+
+nav ul li:hover{background-color:var(#012c25);}
 
 nav ul li a{ color:#F9F3D9;}
 
@@ -51,9 +53,9 @@ nav>a {
 }
 
 section{
-    border-style:none;
+  border-style:none;
   margin:0px 0px;
-  padding: 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
 
 #about{background-image:url(images/blue-bg.jpeg);
@@ -132,15 +134,52 @@ h2 {text-align:center;}
   padding-left:0;
 }
 
-.pin-holder li {
+.pin-holder>li {
+  position:relative;
+  overflow:hidden;
   background-color:#F9F3D9;
   border-style:solid;
   border-width:1px;
   border-color:#343E40;
   border-radius:12px;
-  padding: 10px;
-  margin: 15px 15px;
+  padding: 0px;
+  margin: 0px 0px 20px;
   display: inline-block;
+  width: 100%;  
+  box-sizing: border-box;
+  break-inside: avoid;
+}
+
+.pin-holder img {
+  display:block;
+  width:100%;
+  height:auto;
+  }
+  
+.pin-holder>li:hover .caption,
+.pin-holder>li:focus-within .caption {
+  transform: translateY(0);
+}
+  
+.caption {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    box-sizing:border-box;
+    transform: translateY(calc(100% - 5rem));
+    background: #F9F3D9;
+    color:#343E40;
+    padding: 1rem;
+    transition: transform 0.5s ease;
+  }
+
+.caption h4 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 #contacts{background-color:#343E40;}
