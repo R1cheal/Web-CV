@@ -5,6 +5,7 @@
     <title>Richeal Web CV</title>
     <link rel="stylesheet" href="styles.css">
   </head>
+  <body>
   <header>
     <nav>
       <div class="logo">
@@ -20,10 +21,13 @@
         <li><a href="#beyond">Beyond</a></li>
         <li><a href="#contacts">Contact Me</a></li>
       </ul>
+      <div class="toggle">
+        <input type="checkbox" id="mode-toggle" name="mode-toggle"/>
+      </div>
       <a href="path_to_file" download="richeal_resume.pdf" class="button">Resume</a>
     </nav>
   </header>
-  <body>
+  <main>
     <section id="about">
       <img 
           src="images/richeal1.png"
@@ -81,15 +85,14 @@
             <button type="button" class="badge extra" skill="Project management">🎨</button>
             <button type="button" class="badge extra" skill="Independent research">⚡</button>
 
-            <button type="button" class="more-btn"></button>
+            <button type="button" class="more-btn"></button></p>
           </div>
         </li>
         <li>
           <h3>BSc Mathematics</h3>
-          <h4>Madras Christian College, East Tambaram, Chennai, India</h4>
+          <h4>Madras Christian College, Chennai, India</h4>
           <h5><time datetime="2021">2021</time> – <time datetime="2025">2025</time></h5>
-          <p> I graduated with First Class with Distinction and a 8.5 CGPA.
-            I was the treasurer of the Mathematics Department which mean I planned, organised and budgeted several cultural events and intercollegiate competitions.</p>
+          <p> I graduated with First Class with Distinction and a 8.5 CGPA. I was the treasurer of the Mathematics Department i.e., I organised and budgeted several cultural events and intercollegiate competitions.</p>
           <p><em>Badges Earned:</em></p>
           <div class="skill-badges">
             <button type="button" class="badge" skill="Programming in C">🌐</button>
@@ -297,5 +300,6 @@
           height="10"></a>
     </section>
     <script src="script.js"></script>
+    </main>
   </body>
 </html>
